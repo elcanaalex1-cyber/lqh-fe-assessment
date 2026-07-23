@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Work Sans", sans-serif;
+  color: #545f7d;
+  background: #fbfbfb;
+  font-synthesis: none;
+}
+* {
+  box-sizing: border-box;
+  // outline: 2px solid red;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+button,
+input,
+select {
+  font: inherit;
+}
+button:focus-visible {
+  outline: 2px solid #39cdcc;
+  outline-offset: 2px;
+}
+input:focus-visible,
+select:focus-visible {
+  outline: none;
+  border-color: #39cdcc;
+  box-shadow: 0 0 0 1px rgba(57, 205, 204, 0.18);
+}
+
+.login-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.filter-control {
+  @apply h-10 w-full rounded-md border border-[#cdd5e3] bg-white px-3 text-sm text-brand-navy outline-none transition focus:border-brand-aqua focus:ring-1 focus:ring-brand-aqua;
+}
+
+.stat-icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  &.pink {
+    color: #df36e9;
+    background: #fbe5fd;
+  }
+  &.purple {
+    color: #6e36ff;
+    background: #eee7ff;
+  }
+  &.orange {
+    color: #ff6957;
+    background: #feece9;
+  }
+  &.rose {
+    color: #f43168;
+    background: #fde7ee;
+  }
+}
+table td {
+  padding: 15px 4px;
+  font-size: 12px;
+  color: #545f7d;
+}
+.status {
+  display: inline-block;
+  padding: 5px 13px;
+  border-radius: 999px;
+  &.inactive {
+    background: #f5f5f7;
+    color: #545f7d;
+  }
+  &.pending {
+    background: #fff8e5;
+    color: #e9b200;
+  }
+  &.blacklisted {
+    background: #fde8ed;
+    color: #e4033b;
+  }
+  &.active {
+    background: #eaf9f2;
+    color: #39a873;
+  }
+}
+.page-button {
+  display: grid;
+  height: 28px;
+  width: 28px;
+  place-items: center;
+  border-radius: 4px;
+  background: #e9edf4;
+  color: #213f7d;
+  &:disabled {
+    opacity: 0.35;
+  }
+  svg {
+    width: 17px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .login-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 640px) {
+  table td {
+    padding: 12px 4px;
+  }
+}

@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+
+# Production builds
+dist/
+build/
+
+# TypeScript and tooling caches
+*.tsbuildinfo
+.eslintcache
+.vite/
+node_modules/.vite/
+
+# Tests and coverage
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local package-manager and temporary files
+.pnpm-store/
+.npm/
+*.tgz
+*.tmp
+*.temp
+
+# Editors and IDEs
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+*.swo
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+
+SUBMISSION_WRITEUP.md

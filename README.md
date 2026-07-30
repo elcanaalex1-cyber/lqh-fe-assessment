@@ -27,6 +27,6 @@ npm run build
 - User details are persisted to `localStorage` before navigation and recovered on refresh or direct detail access.
 - Loading, empty, error, disabled, validation, and success-feedback states are represented.
 - Unsupported destinations provide clear “coming soon” feedback rather than behaving like dead controls. Detail tabs expose intentional empty states.
-- On narrow screens, navigation becomes an off-canvas drawer, cards reflow, detail grids collapse, and dense tables use an intentional horizontal scroll rather than unreadably compressing columns.
+- On narrow screens, navigation becomes an off-canvas drawer, cards reflow, detail grids collapse, and dense tables use an intentional horizontal scroll rather than unreadably compressing columns..
 
 Fonts use `Avenir Next` when available and the bundled Google-hosted `Work Sans` fallback. Brand colors are named tokens in `tailwind.config.js`.

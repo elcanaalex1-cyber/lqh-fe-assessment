@@ -54,7 +54,7 @@ export function Login() {
             Welcome!
           </h1>
           <p className="mt-1 text-base text-brand-muted">
-            Enter details to login.
+            Enter details to login
           </p>
           <form onSubmit={submit} className="mt-14 space-y-6" noValidate>
             <Input
